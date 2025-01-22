@@ -4,13 +4,11 @@
 [![License][license-shield]][license-url]
 [![Issues][issues-shield]][issues-url]
 [![Discord][discord-shield]][discord-url]
-[![Reddit][reddit-shield]][reddit-url]
-[![Telegram][telegram-shield]][telegram-url]
 
 <!-- Project Logo -->
 <p align="center">
   <a href="https://github.com/sebanc/brunch" title="Brunch">
-   <img src="./images/decon_icon-512.png" width="128px" alt="Logo"/>
+   <img src="./Images/decon_icon-512.png" width="128px" alt="Logo"/>
   </a>
 </p>
 <h1 align="center">Brunch Framework</h1>
@@ -43,7 +41,7 @@ Hardware support is highly dependent on the general Linux kernel hardware compat
 
 
 ✔ CPU Compatibility:
-- [Intel CPUs][intel-cpus] from Haswell (4th Gen) / [Celeron CPUs][celeron-cpus] from Braswell
+- [Intel CPUs][intel-cpus] from 8th Gen / [Celeron CPUs][celeron-cpus] from Goldmont
 - [AMD Ryzen][amd-ry-list]
 
 
@@ -57,16 +55,30 @@ Hardware support is highly dependent on the general Linux kernel hardware compat
 ## Install Instructions
 This guide has been split into seperate sections, please follow one of the links below for a guide suitable to your current operating system.
 
+### New: Simplified install with [linuxloops][linuxloops]
+
+Linuxloops is a tool that allows the installation of Brunch with a GUI.
+
+First, identify the recovery image suitable for your CPU:  
+#### Intel
+* 8th gen & 9th gen: "[shyvana][recovery-shyvana]" for Intel / "[bobba][recovery-bobba]" for Celeron.
+* 10th gen: "[jinlon][recovery-jinlon]".
+* 11th gen & above: "[voxel][recovery-voxel]".
+#### AMD
+* Ryzen: "[gumboz][recovery-gumboz]".
+  
+Once you have identified the recovery image suitable for your CPU, follow the instructions in the [linuxloops][linuxloops] repository Readme.
+
+### Manual install instructions
+
 ### [![Install with Linux][linux-img]][linux-guide]  [Install with Linux][linux-guide]
 ### [![Install with Windows][windows-img]][windows-guide]  [Install with Windows][windows-guide]
 
 ## Troubleshooting and Support
 
-In case you run into issues while installing or using Brunch, below are the main places where you can find support:
+In case you run into issues while installing or using Brunch, you can find support on Discord:
 
 [![Discord][discord-shield]][discord-url]
-[![Reddit][reddit-shield]][reddit-url]
-[![Telegram][telegram-shield]][telegram-url]
 
 Additional troubleshooting and support tips can be found at the following page:
 
@@ -88,12 +100,9 @@ Additional troubleshooting and support tips can be found at the following page:
 [pulls-url]: https://github.com/sebanc/brunch/pulls
 [discord-shield]: https://img.shields.io/badge/Discord-Join-7289da?style=flat-square&logo=discord&logoColor=%23FFFFFF
 [discord-url]: https://discord.gg/x2EgK2M
-[telegram-shield]: https://img.shields.io/badge/Telegram-Join-0088cc?style=flat-square&logo=telegram&logoColor=%23FFFFFF
-[telegram-url]: https://t.me/chromeosforpc
-[reddit-shield]: https://img.shields.io/badge/Reddit-Join-FF5700?style=flat-square&logo=reddit&logoColor=%23FFFFFF
-[reddit-url]: https://www.reddit.com/r/Brunchbook
 
 <!-- Outbound Links -->
+[linuxloops]: https://github.com/sebanc/linuxloops
 [croissant]: https://github.com/imperador/chromefy
 [swtpm]: https://github.com/stefanberger/swtpm
 [linux-surface]: https://github.com/linux-surface/linux-surface
@@ -105,10 +114,10 @@ Additional troubleshooting and support tips can be found at the following page:
 [atom-list]: https://en.wikipedia.org/wiki/List_of_Intel_Atom_microprocessors
 [amd-sr-list]: https://en.wikipedia.org/wiki/List_of_AMD_accelerated_processing_units#%22Stoney_Ridge%22_(2016)
 [amd-ry-list]: https://en.wikipedia.org/wiki/List_of_AMD_Ryzen_processors
-[recovery-rammus]: https://cros.tech/device/rammus
-[recovery-volteer]: https://cros.tech/device/volteer
-[recovery-grunt]: https://cros.tech/device/grunt
-[recovery-zork]: https://cros.tech/device/zork
+[recovery-shyvana]: https://cros.tech/device/shyvana
+[recovery-jinlon]: https://cros.tech/device/jinlon
+[recovery-voxel]: https://cros.tech/device/voxel
+[recovery-gumboz]: https://cros.tech/device/gumboz
 [cros-tech]: https://cros.tech/
 [cros-official]: https://cros-updates-serving.appspot.com/
 [vboot-utils]: https://aur.archlinux.org/packages/vboot-utils
@@ -117,26 +126,23 @@ Additional troubleshooting and support tips can be found at the following page:
 [bite-dasher]: https://github.com/BiteDasher/brcr-update
 
 <!-- Images -->
-[decon-icon-24]: ./images/decon_icon-24.png
-[decon-icon-512]: ./images/decon_icon-512.png
-[terminal-icon-24]: ./images/terminal_icon-24.png
-[terminal-icon-512]: ./images/terminal_icon-512.png
-[settings-icon-512]: ./images/settings_icon-512.png
+[decon-icon-24]: ./Images/decon_icon-24.png
+[decon-icon-512]: ./Images/decon_icon-512.png
+[terminal-icon-24]: ./Images/terminal_icon-24.png
+[terminal-icon-512]: ./Images/terminal_icon-512.png
+[settings-icon-512]: ./Images/settings_icon-512.png
 [windows-img]: https://img.icons8.com/color/24/000000/windows-10.png
 [linux-img]: https://img.icons8.com/color/24/000000/linux--v1.png
 
 <!-- Internal Links -->
-[cpu-wiki]: https://github.com/sebanc/brunch/wiki/CPUs-&-Recoveries
-[windows-guide]: ./install-with-windows.md
-[linux-guide]: ./install-with-linux.md
-[troubleshooting-and-faqs]: ./troubleshooting-and-faqs.md
+[linux-guide]: ./Readme/install-with-linux.md
+[windows-guide]: ./Readme/install-with-windows.md
+[troubleshooting-and-faqs]: ./Readme/troubleshooting-and-faqs.md
 [compatibility]: ./README.md#supported-hardware
-[changing-kernels]: ./troubleshooting-and-faqs.md#kernels
-[framework-options]: ./troubleshooting-and-faqs.md#framework-options
+[changing-kernels]: ./Readme/troubleshooting-and-faqs.md#kernels
+[framework-options]: ./Readme/troubleshooting-and-faqs.md#framework-options
 [releases-tab]: https://github.com/sebanc/brunch/releases
 [latest-release]: https://github.com/sebanc/brunch/releases/latest
-[mbr-patch]: https://github.com/sebanc/brunch/raw/master/mbr_support.tar.gz
 [brunch-der]: https://github.com/sebanc/brunch/raw/master/brunch.der
-[secure-boot]: ./install-with-linux.md#secure-boot
-[brunch-pwa-info]: https://github.com/sebanc/brunch/wiki/Brunch-PWA-Guide
+[secure-boot]: ./Readme/install-with-linux.md#secure-boot
 
