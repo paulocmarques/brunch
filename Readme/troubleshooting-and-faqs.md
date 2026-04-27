@@ -314,7 +314,7 @@ It is currently recommended to only update ChromeOS when the matching version of
    * Replace `brunch_archive.tar.gz` with the file's actual filename.
    * Replace `recovery.bin` with the file's actual filename.
 
-```sudo chromeos-update -r ~/Downloads/recovery.bin -f ~/Downloads/brunch_archive.tar.gz```
+```sudo chromeos-update -r ~/MyFiles/Downloads/recovery.bin -f ~/MyFiles/Downloads/brunch_archive.tar.gz```
  * Restart ChromeOS after the update finishes.
   
   Brunch and ChromeOS can also be updated with [BiteDasher's Script][bite-dasher]
@@ -357,7 +357,7 @@ It is currently recommended to only update ChromeOS when the matching version of
  * Run the built in command to update Brunch.
    * Replace `brunch_archive.tar.gz` with the file's actual filename.
 
-```sudo chromeos-update -f ~/Downloads/brunch_archive.tar.gz```
+```sudo chromeos-update -f ~/MyFiles/Downloads/brunch_archive.tar.gz```
  * Restart ChromeOS after the update finishes.
   
   </details>
